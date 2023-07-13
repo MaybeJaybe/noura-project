@@ -7,6 +7,9 @@ import Home from "./Home";
 import reportWebVitals from "./reportWebVitals";
 import Water from "./Water";
 import Routerr from "./Routerr";
+import { Getup2 } from "./Getup2";
+import { Getup } from "./Getup";
+import { Getup1 } from "./Getup1";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
