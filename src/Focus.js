@@ -271,13 +271,15 @@ const Focus = () => {
         <div className='timer'>
           {minutes.toString().padStart(2, '0')}:{seconds.toString().padStart(2, '0')}
         </div>
-        <div>
+        <div className="start">
           {!isRunning ? (
             <button className='start-btn' onClick={startTimer}>Start</button>
           ) : (
             <button className='start-btn' onClick={pauseTimer}>Pause</button>
           )}
-          <button className='reset' onClick={resetTimer}><img src={reset}></img></button>
+        </div>
+        <div className="reset">
+          <button className='reset-btn' onClick={resetTimer}><img src={reset}></img></button>
         </div>
       </div>
 
@@ -310,13 +312,13 @@ const Focus = () => {
                 <tbody>
                 <tr>
                     <td>
-                      <button  onClick={() => handleTimerChange(25)}>25</button>
+                      <button className="dropdown-btn" onClick={() => handleTimerChange(25)}>25</button>
                     </td>
                     <td>
-                      <button onClick={() => handleTimerChange(5)}>5</button>
+                      <button className="dropdown-btn" onClick={() => handleTimerChange(5)}>5</button>
                     </td>
                     <td>
-                      <button  onClick={() => handleTimerChange(15)}>15</button>
+                      <button className="dropdown-btn" onClick={() => handleTimerChange(15)}>15</button>
                     </td>
                   </tr>
                 </tbody>

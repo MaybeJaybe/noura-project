@@ -4,7 +4,7 @@ import congo from "./temp_preferences_custom.png";
 
 const Breathe3 = () => {
   return (
-    <div className="breath3">
+    <div className="breathe3">
       <div className="div">
         <div className="frame3">
           <div className="Noura">Noura</div>

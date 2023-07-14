@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-  font-family: 'Inter', sans-serif;
+    sans-serif;
+  /* font-family: 'Inter', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,13 +13,12 @@ code {
     monospace;
 }
 
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Inter:400");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"); */
+/* @import url("https://fonts.googleapis.com/css?family=Inter:400"); */
 /* The following line is used to measure usage of this code. You can remove it if you want. */
-@import url("https://px.animaapp.com/64a6aadad20a70b0c7966fc5.64a6aadc381a8751b89eedd8.64a6aade9654ba018ab6591b.rcp.png");
+/* @import url("https://px.animaapp.com/64a6aadad20a70b0c7966fc5.64a6aadc381a8751b89eedd8.64a6aade9654ba018ab6591b.rcp.png"); */
 
-
+/* 
 
 .screen a {
   display: contents;
@@ -69,4 +68,4 @@ code {
 
 * {
   box-sizing: border-box;
-}
+} */

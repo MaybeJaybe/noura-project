@@ -29,10 +29,10 @@ const Breathe = () => {
   };
 
   return (
-    <div className="breath">
+    <div className="breathe">
       {!startClicked ? (
         <div className="frame" onClick={handleStartClick}>
-          <div className="Start">Start</div>
+          <div className="start">Start</div>
         </div>
       ) : ( sessionDuration>0 ? 
         <Breathe2 sessionDuration={sessionDuration} /> : <Breathe3 />
@@ -52,10 +52,6 @@ const Breathe = () => {
           />
         </div>
         <div className="text-wrapper-3">minutes</div>
-      </div>
-      <div className="frame-3">
-        <div className="text-wrapper-4">Noura</div>
-        <img className="cancel" alt="Cancel" src="cancel.png" />
       </div>
     </div>
   );

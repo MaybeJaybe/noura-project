@@ -59,7 +59,7 @@ const Breathe2 = ({ sessionDuration }) => {
   }
 
   return (
-    <div className="breath2">
+    <div className="breathe2">
       <div className="div">
         <div className="frame2">
           <div className="Noura">Noura</div>

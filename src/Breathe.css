@@ -1,142 +1,58 @@
-.breath {
-  background-color: #222222;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: flex-start;
-	border: 0px none;
-	border-radius: 4px;
-	height: 286px;
-	width: 280px;
-	z-index: 10;
-	position: relative;
-	overflow-x: visible;
-  background-color: #222222;
-	border: 1px none;
-	border-radius: 4px;
-	height: 286px;
-	bottom: 94px;
-	
-  left: -64px;
-	
-}
-
-
-
-.breath .frame {
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 8px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  left: 210px;
-  padding: 8px 16px;
+.breathe .frame {
   position: absolute;
-  top: 237px;
-  width: fit-content;
+  bottom: 5%;
 }
 
-.breath .text-wrapper {
-  color: #222222;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: fit-content;
+.start {
+  text-decoration: underline;
 }
 
-.breath .p {
+.breathe .p {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
-  left: 19px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 51px;
-  width: 248px;
+  margin: 1em .5em;
 }
 
-.breath .frame-2 {
-  align-items: center;
+.breathe .frame-2 {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
   justify-content: center;
-  left: 105px;
-  position: absolute;
-  top: 114px;
-  width: fit-content;
 }
 
-.breath .div-wrapper {
-  align-items: center;
+.breathe .div-wrapper {
+  /* align-items: center; */
   background-color: #ffffff;
   border-radius: 4px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   padding: 0px 16px;
   position: absolute;
   width: 50px;
 }
 
-.breath .text-wrapper-2 {
-  color: #222222;
+.breathe .text-wrapper-2 {
   font-family: "Inter-Regular", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: 4px;
-  position: relative;
   border-color: transparent;
- text-align: center;
-  width: fit-content;
+  text-align: center;
 }
 
-.breath .text-wrapper-3 {
+.breathe .text-wrapper-3 {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
+  /* letter-spacing: 0; */
+  /* line-height: normal; */
   position: relative;
   white-space: nowrap;
   width: fit-content;
   top: 30px
 }
 
-.breath .frame-3 {
-  background-color: #222222;
-  align-items: flex-start;
-  display: flex;
-  gap: 195px;
-  left: 10px;
-  position: absolute;
-  top: 8px;
-  width: fit-content;
-}
-
-.breath .text-wrapper-4 {
-  color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: fit-content;
-}
-
-.breath .cancel {
+.breathe .cancel {
   height: 20px;
   min-width: 20px;
   position: relative;
@@ -144,14 +60,14 @@
 
 
 
-/* BREATHE2.CSS ->->->->->->->->->->->->->->->->->->->->->->->->->->->->->*/
+/* breathe2.CSS ->->->->->->->->->->->->->->->->->->->->->->->->->->->->->*/
 
 
 
 
 
 
-.breath2 {
+.breathe2 {
   background-color: #222222;
   display: flex;
   flex-direction: row;
@@ -167,7 +83,7 @@
   overflow-x: visible;
 }
 
-.breath2 .div {
+.breathe2 .div {
   background-color: #222222;
   border: 1px none;
   border-radius: 4px;
@@ -180,7 +96,7 @@
 }
 
 
-.breath2 .frame2 {
+.breathe2 .frame2 {
   background-color: #222222;
   align-items: flex-start;
   display: flex;
@@ -191,7 +107,7 @@
   width: fit-content;
 }
 
-.breath2 .Noura {
+.breathe2 .Noura {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 14px;
@@ -203,13 +119,13 @@
   width: fit-content;
 }
 
-.breath2 .cancel {
+.breathe2 .cancel {
   height: 20px;
   min-width: 20px;
   position: relative;
 }
 
-.breath2 .timer-breathe2 {
+.breathe2 .timer-breathe2 {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 16px;
@@ -222,7 +138,7 @@
   white-space: nowrap;
 }
 
-.breath2 .breathe-msg{
+.breathe2 .breathe-msg{
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 16px;
@@ -235,7 +151,7 @@
   white-space: nowrap;
 }
 
-.breath2 .overlap-group {
+.breathe2 .overlap-group {
   background-color: #d9d9d9;
   border-radius: 74.5px;
   height: 149px;
@@ -245,7 +161,7 @@
   width: 149px;
 }
 
-.breath2 .ellipse {
+.breathe2 .ellipse {
   background-color: #c2c2c2;
   border-radius: 35.5px;
   height: 71px;
@@ -255,7 +171,7 @@
   width: 71px;
 }
 
-.breath2 .ellipse-2 {
+.breathe2 .ellipse-2 {
   background-color: #ffffff;
   border-radius: 25px;
   height: 50px;
@@ -283,15 +199,15 @@
   }
 }
 
-.breath2 .ellipse-2.animating {
+.breathe2 .ellipse-2.animating {
   animation: ellipse2Animation 2s linear infinite;
 }
 
 
 
-/* BREATHE3 ->->->->-->->->->->->->->->->->->->->->->->->->->->->->->->*/
+/* breathe3 ->->->->-->->->->->->->->->->->->->->->->->->->->->->->->->*/
 
-.breath3 {
+.breathe3 {
   background-color: #222222;
   display: flex;
   flex-direction: row;
@@ -307,7 +223,7 @@
   overflow-x: visible;
 }
 
-.breath3 .div {
+.breathe3 .div {
   background-color: #222222;
   border: 1px none;
   border-radius: 4px;
@@ -317,7 +233,7 @@
   width: 280px;
 }
 
-.breath3 .frame3 {
+.breathe3 .frame3 {
   background-color: #222222;
   align-items: flex-start;
   display: flex;
@@ -328,7 +244,7 @@
   width: fit-content;
 }
 
-.breath3 .text-wrapper {
+.breathe3 .text-wrapper {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 14px;
@@ -340,13 +256,13 @@
   width: fit-content;
 }
 
-.breath3 .cancel {
+.breathe3 .cancel {
   height: 20px;
   min-width: 20px;
   position: relative;
 }
 
-.breath3 .p {
+.breathe3 .p {
   color: #ffffff;
   font-family: "Inter-Regular", Helvetica;
   font-size: 16px;
@@ -359,7 +275,7 @@
   white-space: nowrap;
 }
 
-.breath3 .div-wrapper {
+.breathe3 .div-wrapper {
   align-items: center;
   background-color: #ffffff;
   border-radius: 8px;
@@ -373,7 +289,7 @@
   width: fit-content;
 }
 
-.breath3 .another-session {
+.breathe3 .another-session {
   color: #222222;
   font-family: "Inter-Regular", Helvetica;
   font-size: 14px;
@@ -385,7 +301,7 @@
   width: fit-content;
 }
 
-.breath3 .temp-preferences {
+.breathe3 .temp-preferences {
   height: 100px;
   left: 90px;
   position: absolute;

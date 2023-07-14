@@ -14,11 +14,11 @@ export const Getup2 = () => {
         </p>
         <div className="frame-2">
           <div className="text-wrapper-3">Noura</div>
-          <img
+          {/* <img
             className="img"
             alt="Cancel"
             src="https://generation-sessions.s3.amazonaws.com/76d6ce015c4f9a010b99454fd9a7c83c/img/cancel@2x.png"
-          />
+          /> */}
         </div>
         <div className="frame-3">
           <h1 className="h-1">45:00</h1>

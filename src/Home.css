@@ -65,6 +65,7 @@ button:hover {
 }
 .bottom-button {
 	position: absolute;
+	/* background-color: #567373; */
 	right: 5%;
 	bottom: 5%;
 }
