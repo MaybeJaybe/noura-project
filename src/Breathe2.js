@@ -6,6 +6,7 @@ const Breathe2 = ({ sessionDuration }) => {
   const [timer, setTimer] = useState(sessionDuration * 60);
   const [message, setMessage] = useState("Breathe In");
   const [isTimerComplete, setTimerComplete] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     let interval = null;
@@ -33,7 +34,7 @@ const Breathe2 = ({ sessionDuration }) => {
         }
         return prevMessage;
       });
-    }, 2000);
+    }, 10000);
 
     return () => {
       clearInterval(interval);
@@ -54,12 +55,27 @@ const Breathe2 = ({ sessionDuration }) => {
     return `${formattedMinutes}:${formattedSeconds}`;
   };
 
+  useEffect(() => {
+    if (message === "Breathe In") {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setIsAnimating(true);
+        setTimeout(() => {
+          setMessage("Hold");
+          setTimeout(() => {
+            setMessage("Exhale");
+          }, 3000);
+        }, 4000);
+      }, -1000);
+    }
+  }, [message]);
+
   if (isTimerComplete) {
     return <Breathe3 />;
   }
 
   return (
-    <div className="breathe2">
+    <div className="breath2">
       <div className="div">
         <div className="frame2">
           <div className="Noura">Noura</div>
@@ -68,7 +84,7 @@ const Breathe2 = ({ sessionDuration }) => {
         <div className="timer-breathe2">{formatTime(timer)}</div>
         <div className="breathe-msg">{message}</div>
         <div className="overlap-group">
-          <div className="ellipse" />
+          <div className={`ellipse ${isAnimating ? "animate" : ""}`} />
           <div className="ellipse-2" />
         </div>
       </div>
