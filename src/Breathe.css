@@ -181,26 +181,23 @@
   width: 50px;
 }
 
-@keyframes ellipse2Animation {
+@keyframes breatheAnimation {
   0% {
     transform: scale(1);
   }
   25% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
   75% {
-    transform: scale(1);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
   }
 }
 
-.breathe2 .ellipse-2.animating {
-  animation: ellipse2Animation 2s linear infinite;
+.ellipse.animate {
+  animation: breatheAnimation 10s linear infinite;
 }
 
 
