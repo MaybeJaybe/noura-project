@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Breathe.css';
-import Breathe2 from './Breathe2';
-import Breathe3 from './Breathe3';
+import Breathe2 from '../Breathe2';
+import Breathe3 from '../Breathe3';
+
+// breathe links need to be like stretch links, idk what this conditional is doing with the start button
 
 const Breathe = () => {
   const [startClicked, setStartClicked] = useState(false);
@@ -29,30 +31,31 @@ const Breathe = () => {
   };
 
   return (
-    <div className="breathe">
-      {!startClicked ? (
-        <div className="frame" onClick={handleStartClick}>
-          <div className="start">Start</div>
-        </div>
-      ) : ( sessionDuration>0 ? 
-        <Breathe2 sessionDuration={sessionDuration} /> : <Breathe3 />
-      
-      )}
-      <p className="p">How long do you want this session to last?</p>
-      <div className="frame-2">
-        <div className="div-wrapper">
+    <div className="breathe-container">
+      <p className="breathe-prompt">How long do you want this session to last?</p>
+      <div className="determine-timer">
+        <div className="timer-input">
           <input
             type="number"
-            className="text-wrapper-2"
-            min="0"
-            max="60"
+            id="number"
+            placeholder="0"
+            max="30"
             value={sessionDuration}
             onChange={handleDurationChange}
             onKeyDown={handleKeyDown}
           />
         </div>
-        <div className="text-wrapper-3">minutes</div>
+        <div className="input-text">minutes</div>
       </div>
+
+      {!startClicked ? (
+        <div className="start" onClick={handleStartClick}>
+          <div className="start-button">Start</div>
+        </div>
+      ) : ( sessionDuration>0 ? 
+        <Breathe2 sessionDuration={sessionDuration} /> : <Breathe3 />
+      
+      )}
     </div>
   );
 };

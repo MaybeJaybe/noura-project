@@ -1,3 +1,5 @@
+/* figure out why entire page lengthens when dropdown is opened */
+
 .pomodoro-container {
   display: flex;
   flex-direction: column;
@@ -35,7 +37,6 @@
 .timer{
   color: #FFF;
   font-size: 40px;
-  font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
 
@@ -48,14 +49,22 @@
   border-radius: 8px;
   background: #FFF;
   margin: 48px, 58px, 80px, 156px;
+  font-family: 'Questrial', sans-serif;
 }
 
 .reset-btn {
   padding-right: 8px;
   padding-top: 8px;
-  flex-shrink: 0;
   background: transparent;
   border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background: transparent;
+}
+.reset-btn:active {
+  transform: translateY(1px);
 }
 
 .t-cont{
@@ -68,14 +77,11 @@
 
 .timer-btn{
   color: #f2f2f2;
+  font-family: 'Questrial', sans-serif;
+  font-size: 14px;
   background: transparent;
   border: none;
   border-radius: 2px;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 .timer-btn:hover {
   background: transparent;
@@ -95,16 +101,11 @@
 }
 
 th{
-  color: #FFF;
-  font-size: 14px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   align-items: center;
   padding-left: 9px;
   padding-right: 8px;
   padding-top: 15px;
+  font-size: 14px;
 }
 
 td{
@@ -116,6 +117,7 @@ label{
   margin-left: 2px;
 }
 
-.dropdown-btn {
+#dropdown-input {
   width: 60px;
+  font-family: 'Questrial', sans-serif;
 }
