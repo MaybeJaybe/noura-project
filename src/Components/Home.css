@@ -1,9 +1,14 @@
 .container {
 	color: #f2f2f2;
 	background-color: #243340;
-	/* font-family: 'Cinzel Decorative', cursive; */
 	font-family: 'Questrial', sans-serif;
 	font-size: 16px;
+	width: 280px;
+	height: 318px;
+	right: 0;
+	position: fixed;
+}
+.home {
 	width: 280px;
 	height: 318px;
 	position: relative;
@@ -62,7 +67,7 @@ button:hover {
 	justify-content: center;
 }
 .btn-item {
-	padding: 6px;
+	padding: 10px;
 }
 .bottom-link {
 	position: absolute;

@@ -1,47 +1,55 @@
-// import { useState } from "react";
-import React, { useState } from "react";
-import "./Water1.css";
-// import Water1 from "./Water1";
-import { Link } from "react-router-dom";
+// import { useState } from 'react';
+import React, { useState } from 'react';
+import './Components/Water.css';
+// import Water1 from './Water1';
+import { Link } from 'react-router-dom';
 function Water1(props) {
   const {
-    noura,
-    cancel,
     whatIsYourTarget,
     number,
     oz,
     theUSNationalAc,
     next,
+    temp,
     Every,
     rom,
   } = props;
-  console.log(rom + "pp");
-  const [nnumber, setnnumber] = useState("0");
+  console.log(rom + 'pp');
+  const [nnumber, setnnumber] = useState('0');
   return (
-    <div className="">
-      <div className="water1 screen">
-        <div className="frame-29">
+    <div className='water-container'>
+      <div className='water1 screen'>
+        <div className='frame-29'>
         </div>
-        <div className="what-is-your-target inter-normal-white-16px">
+        <div className='oz-prompt'>
           {whatIsYourTarget}
         </div>
-        <div className="frame-30">
-          <div className="oz inter-normal-white-16px">{Every}</div>
-          <div className="frame-11">
+        <div className='oz-prompt'>
+          <div className='oz-prompt'>{Every}</div>
+          <div className='num-input'>
             <input
-              className="number inter-normal-log-cabin-14px yash"
+              className='number'
               value={nnumber}
               onChange={(e) => {
                 setnnumber(e.target.value);
               }}
             />
           </div>
-          <div className="oz inter-normal-white-16px">{oz}</div>
+          <div className='oz-prompt'>{oz}</div>
         </div>
-        <p className="the-us-national-ac">{theUSNationalAc}</p>
-        <div className="frame-27">
-          <div className="next-water inter-normal-log-cabin-14px">
-            <Link to={`/${rom}`}>{next}</Link>
+        <p className='info'>{theUSNationalAc}</p>
+        <div className='frame-27'>
+          <div className='next'>
+            <Link
+              to={`/${nnumber === '' ? '' : rom}`}
+              state={
+                rom === 'water2'
+                  ? { number: nnumber }
+                  : { number: temp, minute: nnumber }
+              }
+            >
+              {nnumber === '' ? 'back' : next}
+            </Link>
           </div>
         </div>
       </div>

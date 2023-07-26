@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import './Breathe.css';
 import Breathe2 from '../Breathe2';
 import Breathe3 from '../Breathe3';
 
-// breathe links need to be like stretch links, idk what this conditional is doing with the start button
-
+// breathe links need to be like stretch links, or find a way to hide the first page prompt.
 const Breathe = () => {
   const [startClicked, setStartClicked] = useState(false);
   const [sessionDuration, setSessionDuration] = useState(0);
@@ -31,26 +31,29 @@ const Breathe = () => {
   };
 
   return (
-    <div className="breathe-container">
-      <p className="breathe-prompt">How long do you want this session to last?</p>
-      <div className="determine-timer">
-        <div className="timer-input">
+    <div className='breathe-container'>
+      <p className='breathe-prompt'>How long do you want this session to last?</p>
+      <div className='determine-timer'>
+        <div className='timer-input'>
           <input
-            type="number"
-            id="number"
-            placeholder="0"
-            max="30"
+            type='number'
+            id='number'
+            placeholder='0'
+            max='30'
             value={sessionDuration}
             onChange={handleDurationChange}
             onKeyDown={handleKeyDown}
           />
         </div>
-        <div className="input-text">minutes</div>
+        <div className='input-text'>minutes</div>
       </div>
 
       {!startClicked ? (
-        <div className="start" onClick={handleStartClick}>
-          <div className="start-button">Start</div>
+        <div className='start' onClick={handleStartClick}>
+          <button className='start-button'>Start</button>
+          {/* <Link to='/breathe1' state={number}>
+            <button className='start-button'>Start</button>
+          </Link> */}
         </div>
       ) : ( sessionDuration>0 ? 
         <Breathe2 sessionDuration={sessionDuration} /> : <Breathe3 />

@@ -1,5 +1,3 @@
-/* figure out why entire page lengthens when dropdown is opened */
-
 .pomodoro-container {
   display: flex;
   flex-direction: column;
@@ -100,16 +98,19 @@
   color: #f2f2f2;
 }
 
-th{
+table {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-left: 9px;
-  padding-right: 8px;
-  padding-top: 15px;
-  font-size: 14px;
+  padding: 8px;
 }
 
+th{
+  padding: 10px;
+  font-size: 14px;
+}
 td{
-  margin-bottom: 37px;
+  padding: 0 10px;
 }
 
 label{
@@ -117,7 +118,11 @@ label{
   margin-left: 2px;
 }
 
-#dropdown-input {
+#short-break-input {
+  width: 60px;
+  font-family: 'Questrial', sans-serif;
+}
+#long-break-input {
   width: 60px;
   font-family: 'Questrial', sans-serif;
 }
