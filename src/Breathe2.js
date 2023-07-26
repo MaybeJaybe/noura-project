@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Breathe3 from "./Breathe3.js";
 import "./Components/Breathe.css";
+import Breathe3 from "./Breathe3";
+import cancel  from "./cancel.svg";
 
 const Breathe2 = ({ sessionDuration }) => {
   const [timer, setTimer] = useState(sessionDuration * 60);
@@ -39,7 +40,6 @@ const Breathe2 = ({ sessionDuration }) => {
     return () => {
       clearInterval(interval);
     };
-
   }, []);
 
   useEffect(() => {
@@ -64,8 +64,7 @@ const Breathe2 = ({ sessionDuration }) => {
         setTimeout(() => {
           setMessage("Hold");
           setTimeout(() => {
-						setMessage("Exhale");
-						// exhale segment needs to be longer before inhaling again, figure that out in a bit
+            setMessage("Exhale");
           }, 3000);
         }, 4000);
       }, -1000);
@@ -77,8 +76,12 @@ const Breathe2 = ({ sessionDuration }) => {
   }
 
   return (
-    <div className="breathe2">
+    <div className="breath2">
       <div className="div">
+        <div className="frame2">
+          <div className="Noura">Noura</div>
+          <img className="cancel" alt="Cancel" src={cancel} />
+        </div>
         <div className="timer-breathe2">{formatTime(timer)}</div>
         <div className="breathe-msg">{message}</div>
         <div className="overlap-group">
