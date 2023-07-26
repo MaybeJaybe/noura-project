@@ -82,14 +82,16 @@
 
 /* breathe2.CSS ->->->->->->->->->->->->->->->->->->->->->->->->->->->->->*/
 
-.breathe2 {
+
+.breath2 {
+  background-color: #243340;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  border: 1px none;
-  border-radius: 4px;
-  height: 286px;
+ 
+ 
+  height: 280px;
   width: 280px;
   z-index: 10;
   position: absolute;
@@ -97,11 +99,12 @@
   overflow-x: visible;
 }
 
-.breathe2 .div {
+.breath2 .div {
+  background-color: #243340;
   border: 1px none;
-  border-radius: 4px;
-  height: 286px;
-  top: 0px;
+ 
+  height: 282px;
+  bottom: 45px;
   right: 0px;
   overflow-x: hidden;
   position: relative;
@@ -109,33 +112,43 @@
 }
 
 
-.breathe2 .frame2 {
+.breath2 .frame2 {
+  background-color: #243340;
   align-items: flex-start;
   display: flex;
   gap: 195px;
-  left: 10px;
+  left: 12px;
   position: absolute;
-  top:15px;
+  top:13px;
   width: fit-content;
 }
 
-.breathe2 .Noura {
-  font-size: 14px;
+.breath2 .Noura {
+  font-family: 'Cinzel Decorative', cursive;
+	font-size: 14px;
+	color: #f2f2f2;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
   margin-top: -1px;
   position: relative;
   width: fit-content;
+  font-family: 'Cinzel Decorative', cursive;
+	font-size: 14px;
+	color: #f2f2f2;
 }
 
-.breathe2 .cancel {
+.breath2 .cancel {
   height: 20px;
   min-width: 20px;
+  right: 15px;
   position: relative;
+  top: 2px;
 }
 
-.breathe2 .timer-breathe2 {
+.breath2 .timer-breathe2 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
   font-size: 16px;
   font-weight: 400;
   left: 110px;
@@ -146,18 +159,21 @@
   white-space: nowrap;
 }
 
-.breathe2 .breathe-msg{
+.breath2 .breathe-msg{
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
   font-size: 16px;
   font-weight: 400;
-  left: 106px;
+  left: 110px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   top: 250px;
   white-space: nowrap;
+  text-align: center;
 }
 
-.breathe2 .overlap-group {
+.breath2 .overlap-group {
   background-color: #d9d9d9;
   border-radius: 74.5px;
   height: 149px;
@@ -167,7 +183,7 @@
   width: 149px;
 }
 
-.breathe2 .ellipse {
+.breath2 .ellipse {
   background-color: #c2c2c2;
   border-radius: 35.5px;
   height: 71px;
@@ -177,14 +193,14 @@
   width: 71px;
 }
 
-.breathe2 .ellipse-2 {
+.breath2 .ellipse-2 {
   background-color: #ffffff;
-  border-radius: 25px;
-  height: 50px;
-  left: 50px;
-  position: absolute;
-  top: 49px;
-  width: 50px;
+  border-radius: 5.5px;
+  height: 11px;
+  left: 69px;
+  position: relative;
+  top: 69px;
+  width: 11px;
 }
 
 @keyframes breatheAnimation {
@@ -211,13 +227,14 @@
 /* breathe3 ->->->->-->->->->->->->->->->->->->->->->->->->->->->->->->*/
 
 .breathe3 {
+  background-color: #243340;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  border: 1px none;
-  border-radius: 4px;
-  height: 286px;
+ 
+ 
+  height: 280px;
   width: 280px;
   z-index: 10;
   position: absolute;
@@ -226,37 +243,55 @@
 }
 
 .breathe3 .div {
+  background-color: #243340;
   border: 1px none;
-  border-radius: 4px;
-  height: 286px;
+ 
+  height: 282px;
+  bottom: 45px;
+  right: 0px;
   overflow-x: hidden;
   position: relative;
   width: 280px;
 }
 
 .breathe3 .frame3 {
+  background-color: #243340;
   align-items: flex-start;
   display: flex;
   gap: 195px;
-  left: 10px;
+  left: 12px;
   position: absolute;
-  top:15px;
+  top:13px;
   width: fit-content;
 }
 
-.breathe3 .text-wrapper {
+.breathe3 .Noura {
+  font-family: 'Cinzel Decorative', cursive;
+	font-size: 14px;
+	color: #f2f2f2;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
   margin-top: -1px;
   position: relative;
   width: fit-content;
+  font-family: 'Cinzel Decorative', cursive;
+	font-size: 14px;
+	color: #f2f2f2;
 }
 
 .breathe3 .cancel {
   height: 20px;
   min-width: 20px;
+  right: 12px;
   position: relative;
 }
 
 .breathe3 .p {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
   left: 63px;
   letter-spacing: 0;
   line-height: normal;
@@ -267,6 +302,7 @@
 
 .breathe3 .div-wrapper {
   align-items: center;
+  background-color: #ffffff;
   border-radius: 8px;
   display: flex;
   gap: 8px;
@@ -279,10 +315,23 @@
 }
 
 .breathe3 .another-session {
+  color: #222222;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
   line-height: normal;
   margin-top: -1px;
   position: relative;
   width: fit-content;
+}
+
+.another-session:hover {
+	background: transparent;
+	cursor: pointer;
+}
+.another-session:active {
+	transform: translateY(1px);
 }
 
 .breathe3 .temp-preferences {
