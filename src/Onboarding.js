@@ -1,6 +1,6 @@
-// import React, {useState} from 'react';
-// import './Onboarding.css';
-// import Home from './Home';
+// import React, {useState} from "react";
+// import "./Onboarding.css";
+// import Home from "./Home";
 
 // const OnboardingAlt = () => {
 // 	const [startClicked, setStartClicked] = useState(false);

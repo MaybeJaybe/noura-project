@@ -1,0 +1,51 @@
+.custom-prompt {
+	padding: 0 16px;
+}
+#custom-dropdown {
+	display: flex;
+	width: 248px;
+	align-items: center;
+	padding: 4px 8px;
+	margin: 0 16px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f2f2f2;
+	font-family: "Questrial", sans-serif;
+}
+#time-dropdown {
+	display: flex;
+	width: 248px;
+	align-items: center;
+	padding: 4px 8px;
+	margin: 0 16px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f2f2f2;
+	font-family: "Questrial", sans-serif;
+}
+.start-wrapper {
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+}
+.custom-start-btn {
+	display: inline-flex;
+  padding: 8px 16px;
+	font-size: 14px;
+	justify-content: center;
+	align-items: center;
+  font-family: "Questrial", sans-serif;
+  border-radius: 8px;
+	border: 1px solid #f2f2f2;
+  background-color: #9fb6bf;
+  cursor: pointer;
+}
+.custom-start-btn:hover {
+  color: #f2f2f2;
+  background-color: #567373;
+}
+.custom-start-btn:active {
+  color: #243340;
+  background-color: #9fb6bf;
+  transform: translateY(1px);
+}

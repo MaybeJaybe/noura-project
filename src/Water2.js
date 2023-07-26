@@ -1,7 +1,8 @@
-import React from 'react';
-import './Components/Water.css';
-import Water1 from './Water1';
-import { useLocation } from 'react-router-dom';
+import React from "react";
+import Water1 from "./Water1";
+import { useLocation } from "react-router-dom";
+import "./Components/Water.css";
+
 function Water2(props) {
   const {
     noura,
@@ -17,11 +18,11 @@ function Water2(props) {
   console.log(location);
   return (
     <Water1
-      whatIsYourTarget='How often do you want to be reminded?'
-      oz='mins'
-      next='Next'
-      Every='Every'
-      rom='water3'
+      whatIsYourTarget="How often do you want to be reminded?"
+      oz="mins"
+      next="Next"
+      Every="Every"
+      rom="water3"
     />
   );
 }

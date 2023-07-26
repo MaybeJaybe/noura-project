@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Components/Water.css";
 // import "./Water3.css";
 import { useNavigate, useLocation } from "react-router-dom";
-export const Water3 = () => {
+
+function Water3() {
   const [isRunning, setIsRunning] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -79,7 +80,6 @@ export const Water3 = () => {
               )}
             </div>
             <div className="reset">
-              {/* <button className='reset-btn' onClick={resetTimer}><img src={reset}></img></button> */}
               <button className="reset-btn" onClick={resetTimer}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,3 +118,5 @@ export const Water3 = () => {
     </div>
   );
 };
+
+export default Water3;

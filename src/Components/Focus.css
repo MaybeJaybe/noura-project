@@ -47,7 +47,7 @@
   border-radius: 8px;
   background: #FFF;
   margin: 48px, 58px, 80px, 156px;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 .reset-btn {
@@ -75,7 +75,7 @@
 
 .timer-btn{
   color: #f2f2f2;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 14px;
   background: transparent;
   border: none;
@@ -120,9 +120,9 @@ label{
 
 #short-break-input {
   width: 60px;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 #long-break-input {
   width: 60px;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
 }
