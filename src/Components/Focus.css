@@ -1,3 +1,5 @@
+/* figure out why entire page lengthens when dropdown is opened */
+
 .pomodoro-container {
   display: flex;
   flex-direction: column;
@@ -28,9 +30,7 @@
   justify-content: center;
 }
 
-.tab {
-  margin: 0 10px;
-}
+
 
 .timer{
   color: #FFF;
@@ -47,7 +47,7 @@
   border-radius: 8px;
   background: #FFF;
   margin: 48px, 58px, 80px, 156px;
-  font-family: "Questrial", sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 .reset-btn {
@@ -73,24 +73,29 @@
   align-items: center;
 }
 
-.timer-btn{
+.tab {
   color: #f2f2f2;
-  font-family: "Questrial", sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 14px;
   background: transparent;
   border: none;
   border-radius: 2px;
+  margin-left: 7px;
 }
-.timer-btn:hover {
+
+.tab:hover {
   background: transparent;
   border-bottom: 1px solid #f2f2f2;
 }
-.timer-btn:active {
+
+.tab:active {
   border-bottom: 1px solid #f2f2f2;
 }
-.timer-btn:focus {
+
+.tab:focus {
   border-bottom: 1px solid #f2f2f2;
 }
+
 
 .dropdown-toggle{
   background: transparent;
@@ -98,19 +103,16 @@
   color: #f2f2f2;
 }
 
-table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 8px;
-}
-
 th{
-  padding: 10px;
+  align-items: center;
+  padding-left: 9px;
+  padding-right: 8px;
+  padding-top: 15px;
   font-size: 14px;
 }
+
 td{
-  padding: 0 10px;
+  margin-bottom: 37px;
 }
 
 label{
@@ -118,11 +120,7 @@ label{
   margin-left: 2px;
 }
 
-#short-break-input {
+#dropdown-input {
   width: 60px;
-  font-family: "Questrial", sans-serif;
-}
-#long-break-input {
-  width: 60px;
-  font-family: "Questrial", sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
